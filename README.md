@@ -50,7 +50,7 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-c
       a. Cutomer is created with by parsing the json
       b. If the customer is whithin 100km radius, it's userID and Name is appended to the list-of-customers-invited-for-Beer
   3. Sort the list-of-customers-invited-for-Beer by userID
-  4. Print list-of-customers-invited-for-Beer by userID
+  4. Print list-of-customers-invited-for-Beer
 
 ```
 
