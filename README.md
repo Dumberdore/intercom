@@ -14,7 +14,7 @@ You can find the Customer list [here](https://s3.amazonaws.com/intercom-take-hom
 
 
 ### Usage
-Binaries are published in the format: https://github.com/OkBeacon/intercom/releases/download/$GIT_TAG/beer-and-cheer-go-$SYSTEM-$PLAFORM
+Binaries are published in the format: `https://github.com/OkBeacon/intercom/releases/download/$GIT_TAG/beer-and-cheer-go-$SYSTEM-$PLAFORM`
 - On macOS, you would need to run the following and then add to your path:
 ```
 curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon-go-darwin-10.6-amd64" && chmod +x autocannon-go-darwin-10.6-amd64
