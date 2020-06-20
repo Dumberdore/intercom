@@ -56,10 +56,11 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon
 
 - To make changes clone this repo and make changes to required package along with required test cases
 - Tag the code if their is any functional code change
+	For example -
 ```
 $ git tag -a v1.0 -m "Prod Ready Version"
 $ git push origin v1.0
 ```
-	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will create new release
+	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will create new release with tag **v1.0**
 
 ### ![Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
