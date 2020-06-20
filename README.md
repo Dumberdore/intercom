@@ -54,8 +54,8 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-c
 
 ```
 
-- To make changes clone this repo and make changes to required package along with required test cases
-- To test locally
+- **To make changes**, clone this repo and make changes to required package along with required test cases
+- **To test locally**
 ```
 $ make test
 go test ./...
@@ -63,7 +63,7 @@ go test ./...
 ok      intercom/customer       (cached)
 ok      intercom/helper (cached)
 ```
-- To run locally
+- **To run locally**
 ```
 $ make run
 go run main.go
@@ -84,7 +84,7 @@ go run main.go
  31  |  Alan Behan
  39  |  Lisa Ahearn
 ```
-- To publish tag the code to trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
+- **To publish**, tag the code to trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
 	- Execute tests
 	- Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
 	- Create new release with given tag
