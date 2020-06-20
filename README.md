@@ -17,12 +17,12 @@ You can find the Customer list <a href="https://s3.amazonaws.com/intercom-take-h
 Binaries are published in the format: `https://github.com/OkBeacon/intercom/releases/download/$GIT_TAG/beer-and-cheer-go-$SYSTEM-$PLAFORM`
 - On macOS, you would need to run the following and then add to your path:
 ```
-curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon-go-darwin-10.6-amd64" && chmod +x autocannon-go-darwin-10.6-amd64
+curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-cheer-darwin-10.6-amd64" && chmod +x beer-and-cheer-darwin-10.6-amd64
 ```
 
 - On Windows you could install from this link or if you have curl installed then run the following and then add to your path:
 ```
-curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon-go-windows-4.0-amd64.exe"
+curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-cheer-windows-4.0-amd64.exe"
 ```
 
 
@@ -84,16 +84,13 @@ go run main.go
  31  |  Alan Behan
  39  |  Lisa Ahearn
 ```
-- To publish
-	- Tag the code if their is any functional code change
-		For example -
+- To publish tag the code to trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
+ - Execute tests
+ - Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
+ - Create new release with given tag
+   For example - to create [beer-and-cheer v1.0](https://github.com/OkBeacon/intercom/releases/tag/v1.0)
 ```
 $ git tag -a v1.0 -m "Prod Ready Version"
 $ git push origin v1.0
 ```
-	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
-	- Execute tests
-	- Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
-	- Create new release with tag **v1.0**
-
 ### ![Build/Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
