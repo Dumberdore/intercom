@@ -55,12 +55,45 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon
 ```
 
 - To make changes clone this repo and make changes to required package along with required test cases
-- Tag the code if their is any functional code change
-	For example -
+- To test locally
+```
+$ make test
+go test ./...
+?       intercom        [no test files]
+ok      intercom/customer       (cached)
+ok      intercom/helper (cached)
+```
+- To run locally
+```
+$ make run
+go run main.go
+  4  |  Ian Kehoe
+  5  |  Nora Dempsey
+  6  |  Theresa Enright
+  8  |  Eoin Ahearn
+ 11  |  Richard Finnegan
+ 12  |  Christina McArdle
+ 13  |  Olive Ahearn
+ 15  |  Michael Ahearn
+ 17  |  Patricia Cahill
+ 23  |  Eoin Gallagher
+ 24  |  Rose Enright
+ 26  |  Stephen McArdle
+ 29  |  Oliver Ahearn
+ 30  |  Nick Enright
+ 31  |  Alan Behan
+ 39  |  Lisa Ahearn
+```
+- To publish
+	- Tag the code if their is any functional code change
+		For example -
 ```
 $ git tag -a v1.0 -m "Prod Ready Version"
 $ git push origin v1.0
 ```
-This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will create new release with tag **v1.0**
+	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
+	- Execute tests
+	- Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
+	- Create new release with tag **v1.0**
 
 ### ![Build/Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
