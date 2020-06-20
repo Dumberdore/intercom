@@ -1,0 +1,25 @@
+2. Proudest Achievement
+What's your proudest achievement? It can be a personal project or something you've worked on professionally. Just a short paragraph is fine, but I'd love to know why you're proud of it, what impact it had (If any) and any insights you took from it.
+
+Ans.
+
+This code submission is probably one of the coolest things I have done recently. Hear me out :)
+I recently started learning Golang and wanted to do a project in it. I am also very new to CI/CD tools (probably a year of experience).
+
+Since I read your email (today, around 8 am)
+    - I was thinking about the problem between the morning run and breakfast
+    - Had a pseudo-code ready by the time I opened my laptop
+    - Implemented the code in and around 5 hours
+
+I was really happy that I could write a small program from grounds up using a new tech I barely know!
+
+While creating GitHub repo for my submission, I was thinking about how to make it stand out.
+So I implemented the CI pipeline using GitHub actions! Again, I haven't used gh-actions before.
+I spend another hour creating a pipeline, which will
+    - Test my code
+    - Build binaries for macOS, Linux & Windows
+    - Creates a release uploading those binaries
+
+I think I made maximum out of this Take-Home-Test and thank you so much for the opportunity.
+
+There are other professional achievements at my current job and previous jobs but this one is probably my favorite!
