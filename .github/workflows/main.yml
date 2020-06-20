@@ -11,11 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Make binaries
-        uses: sosedoff/actions/golang-build@master
+      - name: go-cross-build
+        uses: thatisuday/go-cross-build@v1
         # Uncomment to following piece to restrict targets
         # with:
         #   args: linux/amd64 darwin/amd64
