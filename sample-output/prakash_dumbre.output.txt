@@ -1,4 +1,4 @@
-$ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-cheer-darwin-10.6-amd64" && chmod +x beer-and-cheer-darwin-10.6-amd64 >> prakash_dumbre.output.txt
+$ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-cheer-darwin-10.6-amd64" && chmod +x beer-and-cheer-darwin-10.6-amd64
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   645  100   645    0     0   2480      0 --:--:-- --:--:-- --:--:--  2480
