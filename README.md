@@ -63,4 +63,4 @@ $ git push origin v1.0
 ```
 	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will create new release with tag **v1.0**
 
-### ![Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
+### ![Build/Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
