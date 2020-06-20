@@ -1,0 +1,23 @@
+$ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-cheer-darwin-10.6-amd64" && chmod +x beer-and-cheer-darwin-10.6-amd64 >> prakash_dumbre.output.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   645  100   645    0     0   2480      0 --:--:-- --:--:-- --:--:--  2480
+100 5609k  100 5609k    0     0  2321k      0  0:00:02  0:00:02 --:--:-- 3031k
+
+$ ./beer-and-cheer-darwin-10.6-amd64
+  4  |  Ian Kehoe           
+  5  |  Nora Dempsey        
+  6  |  Theresa Enright     
+  8  |  Eoin Ahearn         
+ 11  |  Richard Finnegan    
+ 12  |  Christina McArdle   
+ 13  |  Olive Ahearn        
+ 15  |  Michael Ahearn      
+ 17  |  Patricia Cahill     
+ 23  |  Eoin Gallagher      
+ 24  |  Rose Enright        
+ 26  |  Stephen McArdle     
+ 29  |  Oliver Ahearn       
+ 30  |  Nick Enright        
+ 31  |  Alan Behan          
+ 39  |  Lisa Ahearn         
