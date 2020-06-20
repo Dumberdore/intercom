@@ -1,4 +1,4 @@
-# The Test
+# Technical Problem
 
 <details close>
 <summary>Problem statement</summary>
@@ -16,7 +16,7 @@ We have some customer records in a text file (customers.txt) -- one customer per
 </details>
 
 
-### Usage
+# Usage
 Binaries are published in the format: `https://github.com/OkBeacon/intercom/releases/download/$GIT_TAG/beer-and-cheer-go-$SYSTEM-$PLAFORM`
 - On macOS, you would need to run the following and then add to your path:
 ```
@@ -29,7 +29,7 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v1.0/beer-and-c
 ```
 
 
-### Developer guide
+# Developer guide
 
 - Code Structure
 ```
