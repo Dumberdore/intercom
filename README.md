@@ -26,19 +26,40 @@ curl -LO "https://github.com/OkBeacon/intercom/releases/download/v0.2/autocannon
 ```
 
 
-### Code Structure
+### Developer guide
+
+- Code Structure
 ```
- .
-├──  customer
-│  ├──  customerMethods.go
-│  ├──  customerMethods_test.go
-│  └──  customerTypes.go
-├──  go.mod
-├──  go.sum
-├──  helper
-│  ├──  utilMethods.go
-│  ├──  utilMethods_test.go
-│  └──  utilTypes.go
-├──  main.go
-└──  README.md
+.
+├── customer - This package holds types and methods required to implement Customers
+│  ├──  customerMethods.go
+│  ├──  customerMethods_test.go
+│  └──  customerTypes.go
+
+├── helper - This package holds types and methods required to implement utilities
+│  ├──  utilMethods.go
+│  ├──  utilMethods_test.go
+│  └──  utilTypes.go
+
+├──  main.go
+└──  README.md
+
+- Program execution starts in main.go
+	1. Using utility functions in helper package, it fetches text file from Url and returns the list of strings representings lines in file
+	2. For each line,
+		a. Cutomer is created with by parsing the json
+		b. If the customer is whithin 100km radius, it's userID and Name is appended to the list-of-customers-invited-for-Beer
+	3. Sort the list-of-customers-invited-for-Beer by userID
+	4. Print list-of-customers-invited-for-Beer by userID
+
 ```
+
+- To make changes clone this repo and make changes to required package along with required test cases
+- Tag the code if their is any functional code change
+```
+$ git tag -a v1.0 -m "Prod Ready Version"
+$ git push origin v1.0
+```
+	This will trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will create new release
+
+### ![Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
