@@ -85,10 +85,10 @@ go run main.go
  39  |  Lisa Ahearn
 ```
 - To publish tag the code to trigger a [github-action pipeline](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease) which will:
- - Execute tests
- - Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
- - Create new release with given tag
-   For example - to create [beer-and-cheer v1.0](https://github.com/OkBeacon/intercom/releases/tag/v1.0)
+		- Execute tests
+		- Build binaries for targets: windows/amd64,linux/amd64,darwin/amd64
+		- Create new release with given tag
+		  For example - to create [beer-and-cheer v1.0](https://github.com/OkBeacon/intercom/releases/tag/v1.0)
 ```
 $ git tag -a v1.0 -m "Prod Ready Version"
 $ git push origin v1.0
