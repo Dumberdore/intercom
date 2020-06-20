@@ -35,6 +35,6 @@ func main() {
 		return InvitedCustomers[i].UserID < InvitedCustomers[j].UserID
 	})
 	for _, c := range InvitedCustomers {
-		fmt.Printf("%#v\n", c)
+		fmt.Printf("%3d  |  %-20s\n", c.UserID, c.CustomerName)
 	}
 }
