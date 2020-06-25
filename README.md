@@ -97,4 +97,4 @@ $ git tag -a v1.0 -m "Prod Ready Version"
 $ git push origin v1.0
 ```
 ### ![Build/Release](https://github.com/OkBeacon/intercom/workflows/Release/badge.svg)
-(Gh-Actions)[https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease]
+[Gh-Actions](https://github.com/OkBeacon/intercom/actions?query=workflow%3ARelease)
